@@ -1,4 +1,10 @@
-App = Ember.Application.create();
+App = Ember.Application.create({
+  ready: function() {
+    Ember.run.next(this, function(){
+      $(document).foundation();
+    });
+  }
+});
 
 App.Router.map(function() {
   this.resource("about", function() {

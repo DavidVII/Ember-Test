@@ -5,6 +5,7 @@
 <title>Ember Starter Kit</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/foundation.css">
+  <script src="js/libs/modernizr.js"></script>
 </head>
 <body>
   <script type="text/x-handlebars">
@@ -29,9 +30,14 @@
       </nav>
     </div>
 
-    <h2>Welcome to Ember.js</h2>
 
-    {{outlet}}
+    <div class="container">
+      <div class="row">
+        <h2>Welcome to Ember.js</h2>
+        {{outlet}}
+      </div>
+    </div>
+
   </script>
 
   <script type="text/x-handlebars" id="index">
